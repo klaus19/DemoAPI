@@ -1,0 +1,184 @@
+type: collection.insomnia.rest/5.0
+name: Stores API
+meta:
+  id: wrk_6d0084df00ed45598265346e69ec1a41
+  created: 1748505282529
+  modified: 1748505282529
+collection:
+  - url: http://127.0.0.1:5000/store
+    name: /store Get all store data
+    meta:
+      id: req_e608adb8e4774225bda7e2c0a1138b64
+      created: 1748505316585
+      modified: 1748505680486
+      isPrivate: false
+      sortKey: -1748505316585
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: " http://127.0.0.1:5000/store"
+    name: /store Create new store
+    meta:
+      id: req_2e020d1373cd4605916e455652816c55
+      created: 1748510733896
+      modified: 1748511481926
+      isPrivate: false
+      sortKey: -1748510733896
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"My Store 2"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: " http://127.0.0.1:5000/store/My Store 2/item"
+    name: /store/<name>/item Create item in store
+    meta:
+      id: req_4c1764fe069440129db1b260c0339b44
+      created: 1748510955824
+      modified: 1748511518587
+      isPrivate: false
+      sortKey: -1748508025240.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"Laptop",
+        	"price":1799
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:5000/store/My Store
+    name: /store/<name>
+    meta:
+      id: req_bd1d7a11f1c24278b83398ba2f49e814
+      created: 1748511768989
+      modified: 1748511787281
+      isPrivate: false
+      sortKey: -1748505316535
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:5000/store/My Store/item
+    name: /store/<name>/item
+    meta:
+      id: req_2e8a77d4db724ce5b831ead3fc32c5b5
+      created: 1748511844620
+      modified: 1748511848449
+      isPrivate: false
+      sortKey: -1748505316485
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: " http://127.0.0.1:5000/items"
+    name: Demo1
+    meta:
+      id: req_42c7c73eb9f74d9db0b93a3a8ddc545c
+      created: 1748523863704
+      modified: 1748523920588
+      isPrivate: false
+      sortKey: -1748523863704
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:5000/items
+    name: Demo2
+    meta:
+      id: req_faffdabc66034322a0f810095644df78
+      created: 1748524445445
+      modified: 1748524630314
+      isPrivate: false
+      sortKey: -1748524445445
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_1bda993c52494f8696331ed90a003ee8b81990a9
+    created: 1748505282537
+    modified: 1748505282537
+environments:
+  name: Base Environment
+  meta:
+    id: env_1bda993c52494f8696331ed90a003ee8b81990a9
+    created: 1748505282535
+    modified: 1748505282535
+    isPrivate: false
